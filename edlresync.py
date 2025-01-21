@@ -102,9 +102,9 @@ for edl in edls:
 		index=index-1
 
 	if (not abortfile):
-		with open(synced+"/"+edl, "w") as handle:
+		with open("syncedtimelines"+"/"+edl, "w") as handle:
 			handle.writelines(edlfile)
-			print("wrote "+synced+"/"+edl)
+			print("wrote "+"syncedtimelines"+"/"+edl)
 
 
 
